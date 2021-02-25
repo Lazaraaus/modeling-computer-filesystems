@@ -1,0 +1,20 @@
+add_network_node PC pc1 4096 Larry
+add_network_node printer pr1 2048 5
+system_status
+create_file pc1 f1 20
+create_file pc1 f2 70
+this is not a command
+create_file pc1 f3 70
+delete_files pc1 f1 f2
+delete_network_node pr1
+ls pc1
+transfer_file pc1 pr1 f1
+delete_files s1 "hello mom" myproject
+this is also not a command
+transfer_file pc1 pr1 f3
+ls pr1
+print_files pr1
+transfer_file pc1 pc2 f3
+transfer_file pc1 pr1 f4
+system_status
+halt
